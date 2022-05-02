@@ -10,12 +10,12 @@ import entities.OutSourcedEmployee;
 
 
 /**
- * Programinha basico pra fortalecer o pae no aprendizado, lê dados
- * de entrada e armazena em uma lista, separei as classes em duas entidades
- * Empregado e Empregado tercerizado com regras de negócio diferentes.
+ * Programinha basico para fortalecer o pae no aprendizado, lÃª dados
+ * de entrada e armazena em uma lista, separei as classes em duas entidades:
+ * Empregado e Empregado terceirizado com regras de negÃ³cio diferentes.
  * <p>
- * Como o programa é apenas para fortalecer os fundamentos e esta relativamente pequeno,
- * optei por não utilizar o design patterns MVC.
+ * Como o programa Ã© apenas para fortalecer os fundamentos e esta relativamente pequeno,
+ * optei por nÃ£o utilizar o design patterns MVC.
  * 
  * @author Caique.Batista
  *
@@ -38,7 +38,7 @@ public class Program {
 			
 			System.out.println("Employee " + i + " data: ");
 			
-			System.out.print("Funcionario é tercerizado (y/n) ? ");
+			System.out.print("Funcionario Ã© tercerizado (y/n) ? ");
 			char ch = sc.next().charAt(0);
 			
 			System.out.print("Name : ");
@@ -53,7 +53,7 @@ public class Program {
 			
 			if (ch == 'y') {
 				
-				System.out.print("Cobrança adicional : ");
+				System.out.print("CobranÃ§a adicional : ");
 				double additionalCharge = sc.nextDouble();
 				
 				Employee emp = new OutSourcedEmployee(name, hours, valuePerHour, additionalCharge);
